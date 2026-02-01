@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nereu Music Show | Cantor Profissional</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <div class="top-bar-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Seg - Sex: 09:00 - 18:00</span>
+                    </div>
+                    <div class="top-bar-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Seropédica, Rio de Janeiro</span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <div class="top-bar-item">
+                        <i class="bi bi-telephone"></i>
+                        <span>+55 (21) 97139-6235</span>
+                    </div>
+                    <div class="top-bar-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <!-- Replace the Main Navbar section with this updated code -->
+
+    <!-- Main Navbar -->
+    <nav class="main-navbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="navbar-brand">Nereu <span>Music</span></a>
+                <ul class="navbar-nav d-none d-lg-flex flex-row">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <a href="#contato" class="btn-primary-custom d-none d-md-inline-block">Agendar Show</a>
+                <button class="mobile-menu-toggle d-lg-none" id="mobileMenuToggle" aria-label="Abrir menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#" class="navbar-brand">Nereu <span>Music</span></a>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+                <li><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="mobile-nav-link">Serviços</a></li>
+                <li><a href="#precos" class="mobile-nav-link">Preços</a></li>
+                <li><a href="#galeria" class="mobile-nav-link">Galeria</a></li>
+                <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="#contato" class="btn-primary-custom w-100 text-center mobile-nav-link">Agendar Show</a>
+            <div class="mobile-menu-contact">
+                <div class="mobile-contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <span>+55 (11) 99999-9999</span>
+                </div>
+                <div class="mobile-contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <span>contato@nereumusic.com.br</span>
+                </div>
+                <div class="mobile-contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>São Paulo, Brasil</span>
+                </div>
+            </div>
+            <div class="mobile-menu-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-spotify"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-particles">
+            <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+            <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+            <div class="particle" style="left: 40%; animation-delay: 1s;"></div>
+            <div class="particle" style="left: 50%; animation-delay: 3s;"></div>
+            <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+            <div class="particle" style="left: 70%; animation-delay: 2s;"></div>
+            <div class="particle" style="left: 80%; animation-delay: 4s;"></div>
+            <div class="particle" style="left: 90%; animation-delay: 1s;"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-label">
+                    <i class="bi bi-music-note-beamed me-2"></i>
+                    Cantor & Artista Profissional
+                </div>
+                <h1 class="hero-title">
+                    <span class="line-1">Nereu</span>
+                    <span class="line-2">Music Show</span>
+                </h1>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn-primary-custom">Agendar Show</a>
+                    <a href="#sobre" class="btn-outline-custom">Conhecer Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                alt="Nereu Music">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content">
+                        <div class="section-label">
+                            <span>Sobre Mim</span>
+                        </div>
+                        <h2>Uma Jornada Musical de <span class="highlight">Paixão</span> e Talento</h2>
+                        <p>Nereu se consolidou como um
+                            dos artistas mais requisitados para eventos corporativos, casamentos e festas privadas.</p>
+                        <p>Sua versatilidade musical abrange diversos gêneros, desde MPB e samba até pop internacional,
+                            garantindo uma apresentação personalizada para cada ocasião especial.</p>
+                        <p>Reconhecido pela energia contagiante e pela capacidade de criar momentos inesquecíveis, Nereu
+                            transforma cada show em uma experiência única e memorável para o público.</p>
+                        <div class="about-signature">
+                            <h4>Nereu Muffato</h4>
+                        </div>
+                        <a href="#contato" class="btn-primary-custom">Entre em Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span>Nossos Serviços</span>
+                </div>
+                <h2 class="section-title">O Que <span class="highlight">Oferecemos</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-calendar-heart"></i>
+                        </div>
+                        <h4>Casamentos</h4>
+                        <p>Música ao vivo para tornar o seu dia especial ainda mais inesquecível, com repertório
+                            personalizado para cada momento da cerimônia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h4>Eventos Corporativos</h4>
+                        <p>Shows profissionais para confraternizações, lançamentos de produtos e eventos empresariais
+                            com qualidade e pontualidade garantidas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4>Festas Privadas</h4>
+                        <p>Aniversários, formaturas e celebrações especiais com músicas que vão animar todos os
+                            convidados do início ao fim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Video Section -->
+    <section class="cta-video-section">
+        <div class="play-button" id="playButton">
+            <i class="bi bi-play-fill"></i>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <div class="whatsapp-tooltip">
+            <span>Olá! Como posso ajudar?</span>
+            <button class="tooltip-close" id="tooltipClose">&times;</button>
+        </div>
+        <a href="https://wa.me/5521971396235?text=Olá! Gostaria de saber mais sobre os shows do Nereu Music."
+            class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span class="whatsapp-pulse"></span>
+            <span class="whatsapp-pulse delay"></span>
+        </a>
+    </div>
+
+    <!-- Pricing Section -->
+    <section id="precos" class="pricing-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span>Nossos Pacotes</span>
+                </div>
+                <h2 class="section-title">Escolha o <span class="highlight">Melhor Plano</span></h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card">
+                        <div class="pricing-label">Essencial</div>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">2.500</span>
+                            <span class="duration">/show</span>
+                        </div>
+                        <p class="pricing-desc">Perfeito para eventos menores e íntimos</p>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> 2 horas de show ao vivo</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Repertório personalizado</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Equipamento de som básico</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Iluminação básica</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 1 passagem de som</li>
+                        </ul>
+                        <a href="#contato" class="btn-primary-custom">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Mais Popular</div>
+                        <div class="pricing-label">Premium</div>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">4.500</span>
+                            <span class="duration">/show</span>
+                        </div>
+                        <p class="pricing-desc">O equilíbrio perfeito entre qualidade e valor</p>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> 4 horas de show ao vivo</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Repertório personalizado</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Equipamento de som profissional</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Iluminação profissional</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Banda completa (4 músicos)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> DJ para intervalos</li>
+                        </ul>
+                        <a href="#contato" class="btn-primary-custom">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card">
+                        <div class="pricing-label">Exclusivo</div>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">8.000</span>
+                            <span class="duration">/show</span>
+                        </div>
+                        <p class="pricing-desc">Experiência completa e inesquecível</p>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Show ilimitado</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Repertório 100% personalizado</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Equipamento premium</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Iluminação cinematográfica</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Banda completa (6 músicos)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> DJ + Saxofonista</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Diretor de palco</li>
+                        </ul>
+                        <a href="#contato" class="btn-primary-custom">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span>Nosso Trabalho</span>
+                </div>
+                <h2 class="section-title">Galeria de <span class="highlight">Fotos</span></h2>
+            </div>
+            <div class="gallery-grid">
+                <a href="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Show 1">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="150">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Show 2">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Show 3">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="250">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Show 4">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Show 5">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="350">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Show 6">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Show 7">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="450">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Show 8">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="features-image-wrapper">
+                        <div class="features-image">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                alt="Diferenciais">
+                        </div>
+                        <div class="features-decoration">
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="features-content">
+                        <div class="section-label">
+                            <span>Por Que Escolher</span>
+                        </div>
+                        <h2 class="section-title">Nossos <span class="highlight">Diferenciais</span></h2>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <h5>Repertório com Mais de 500 Músicas</h5>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <h5>Equipamentos de Alta Qualidade</h5>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <h5>Pontualidade e Profissionalismo</h5>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <h5>Atendimento Personalizado</h5>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <h5>Flexibilidade de Horários</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span>Depoimentos</span>
+                </div>
+                <h2 class="section-title">O Que Dizem <span class="highlight">Nossos Clientes</span></h2>
+            </div>
+        </div>
+        <div class="reviews-wrapper">
+            <div class="reviews-row scroll-left">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Maria Silva</h5>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                    <p class="review-text">O Nereu animou nosso casamento de forma incrível! Todos os convidados
+                        elogiaram muito a qualidade do som e a energia do show. Recomendo demais!</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>João Santos</h5>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Contratamos para nossa festa corporativa e foi um sucesso absoluto.
+                        Profissionalismo do início ao fim, repertório variado e muita qualidade.</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Ana Oliveira</h5>
+                            <span>Belo Horizonte, MG</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Simplesmente maravilhoso! A festa de 15 anos da minha filha foi inesquecível
+                        graças ao Nereu. Todos dançaram a noite inteira!</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Carlos Mendes</h5>
+                            <span>Curitiba, PR</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Excelente profissional! Contratei para o aniversário de 50 anos do meu pai e
+                        superou todas as expectativas. Show de altíssima qualidade.</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplicate for infinite scroll -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Maria Silva</h5>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                    <p class="review-text">O Nereu animou nosso casamento de forma incrível! Todos os convidados
+                        elogiaram muito a qualidade do som e a energia do show. Recomendo demais!</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>João Santos</h5>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Contratamos para nossa festa corporativa e foi um sucesso absoluto.
+                        Profissionalismo do início ao fim, repertório variado e muita qualidade.</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Ana Oliveira</h5>
+                            <span>Belo Horizonte, MG</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Simplesmente maravilhoso! A festa de 15 anos da minha filha foi inesquecível
+                        graças ao Nereu. Todos dançaram a noite inteira!</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Carlos Mendes</h5>
+                            <span>Curitiba, PR</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Excelente profissional! Contratei para o aniversário de 50 anos do meu pai e
+                        superou todas as expectativas. Show de altíssima qualidade.</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-row scroll-right">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Fernanda Costa</h5>
+                            <span>Brasília, DF</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Profissional excepcional! O repertório atendeu todos os gostos e a interação
+                        com o público foi perfeita. Já estamos planejando o próximo evento.</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Roberto Lima</h5>
+                            <span>Salvador, BA</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Incrível! A energia que o Nereu trouxe para nossa confraternização foi
+                        surreal. Todos os funcionários amaram e pediram para contratar novamente.</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Juliana Rodrigues</h5>
+                            <span>Porto Alegre, RS</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Meu casamento foi perfeito graças ao Nereu! Ele cantou nossa música favorita
+                        e foi muito emocionante. Recomendo de olhos fechados!</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Marcelo Alves</h5>
+                            <span>Florianópolis, SC</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Contratamos para o lançamento da nossa empresa e foi sensacional. Som
+                        impecável, pontualidade e carisma. Vale cada centavo investido!</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplicate for infinite scroll -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Fernanda Costa</h5>
+                            <span>Brasília, DF</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Profissional excepcional! O repertório atendeu todos os gostos e a interação
+                        com o público foi perfeita. Já estamos planejando o próximo evento.</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Roberto Lima</h5>
+                            <span>Salvador, BA</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Incrível! A energia que o Nereu trouxe para nossa confraternização foi
+                        surreal. Todos os funcionários amaram e pediram para contratar novamente.</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Juliana Rodrigues</h5>
+                            <span>Porto Alegre, RS</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Meu casamento foi perfeito graças ao Nereu! Ele cantou nossa música favorita
+                        e foi muito emocionante. Recomendo de olhos fechados!</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="Cliente">
+                            <span class="verified"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="review-info">
+                            <h5>Marcelo Alves</h5>
+                            <span>Florianópolis, SC</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Contratamos para o lançamento da nossa empresa e foi sensacional. Som
+                        impecável, pontualidade e carisma. Vale cada centavo investido!</p>
+                    <div class="review-footer">
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="review-platform">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Appointment Section -->
+    <section id="contato" class="appointment-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span>Agende Seu Show</span>
+                </div>
+                <h2 class="section-title">Solicite Seu <span class="highlight">Orçamento</span></h2>
+            </div>
+            <div class="appointment-form-wrapper" data-aos="fade-up">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-control" placeholder="seu@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Tipo de Evento</label>
+                            <select class="form-control">
+                                <option value="">Selecione o tipo de evento</option>
+                                <option value="casamento">Casamento</option>
+                                <option value="corporativo">Evento Corporativo</option>
+                                <option value="aniversario">Aniversário</option>
+                                <option value="formatura">Formatura</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Data do Evento</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Número de Convidados</label>
+                            <input type="number" class="form-control" placeholder="Quantidade aproximada">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-control" placeholder="Conte-nos mais sobre o seu evento..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary-custom">Enviar Solicitação</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span>Últimas Notícias</span>
+                </div>
+                <h2 class="section-title">Nosso <span class="highlight">Blog</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Blog Post">
+                            <div class="blog-image-overlay">
+                                <div class="arrow-icon">
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-calendar3"></i> 15 Jan 2024</span>
+                                <span class="divider"></span>
+                                <span><i class="bi bi-folder"></i> Música</span>
+                            </div>
+                            <h4>Como Escolher a Música Perfeita para Seu Casamento</h4>
+                            <div class="blog-divider"></div>
+                            <p class="blog-excerpt">Descubra as melhores dicas para selecionar as músicas que vão
+                                emocionar todos os convidados no seu grande dia.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Blog Post">
+                            <div class="blog-image-overlay">
+                                <div class="arrow-icon">
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-calendar3"></i> 10 Jan 2026</span>
+                                <span class="divider"></span>
+                                <span><i class="bi bi-folder"></i> Eventos</span>
+                            </div>
+                            <h4>Tendências de Entretenimento para Eventos em 2026</h4>
+                            <div class="blog-divider"></div>
+                            <p class="blog-excerpt">Conheça as principais tendências que estão transformando a
+                                experiência de entretenimento em eventos corporativos.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Blog Post">
+                            <div class="blog-image-overlay">
+                                <div class="arrow-icon">
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-calendar3"></i> 05 Jan 2026</span>
+                                <span class="divider"></span>
+                                <span><i class="bi bi-folder"></i> Dicas</span>
+                            </div>
+                            <h4>A Importância da Música ao Vivo em Celebrações</h4>
+                            <div class="blog-divider"></div>
+                            <p class="blog-excerpt">Entenda por que a música ao vivo faz toda a diferença e cria
+                                memórias inesquecíveis em qualquer tipo de celebração.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span>Siga-nos</span>
+                </div>
+                <h2 class="section-title">No <span class="highlight">Instagram</span></h2>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Instagram">
+                    <div class="instagram-overlay">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item" data-aos="fade-up" data-aos-delay="150">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Instagram">
+                    <div class="instagram-overlay">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Instagram">
+                    <div class="instagram-overlay">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item" data-aos="fade-up" data-aos-delay="250">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Instagram">
+                    <div class="instagram-overlay">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Instagram">
+                    <div class="instagram-overlay">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item" data-aos="fade-up" data-aos-delay="350">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Instagram">
+                    <div class="instagram-overlay">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3>Nereu <span>Music</span></h3>
+                            <p>Transformando momentos em memórias inesquecíveis através da música. Shows ao vivo para
+                                casamentos, eventos corporativos e festas privadas.</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-spotify"></i></a>
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h5 class="footer-title">Links Rápidos</h5>
+                        <ul class="footer-links">
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#galeria">Galeria</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h5 class="footer-title">Serviços</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Casamentos</a></li>
+                            <li><a href="#">Corporativos</a></li>
+                            <li><a href="#">Aniversários</a></li>
+                            <li><a href="#">Formaturas</a></li>
+                            <li><a href="#">Shows</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <h5 class="footer-title">Horário de Atendimento</h5>
+                        <ul class="footer-hours">
+                            <li>
+                                <span>Segunda - Sexta</span>
+                                <span>09:00 - 18:00</span>
+                            </li>
+                            <li>
+                                <span>Sábado</span>
+                                <span>10:00 - 14:00</span>
+                            </li>
+                            <li>
+                                <span>Domingo</span>
+                                <span>Fechado</span>
+                            </li>
+                            <li>
+                                <span>Shows & Eventos</span>
+                                <span>Sob Agendamento</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <a href="#">Nereu Music Show</a>. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <span class="video-modal-close" id="closeModal">&times;</span>
+            <div class="video-container">
+                <iframe id="videoIframe" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>
