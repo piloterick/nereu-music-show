@@ -69,30 +69,6 @@ reviewsRows.forEach(row => {
     });
 });
 
-// Form validation
-const form = document.querySelector('.appointment-form-wrapper form');
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Simple validation
-    const inputs = form.querySelectorAll('.form-control');
-    let isValid = true;
-
-    inputs.forEach(input => {
-        if (input.hasAttribute('required') && !input.value.trim()) {
-            isValid = false;
-            input.style.borderColor = '#ff4444';
-        } else {
-            input.style.borderColor = 'rgba(255, 255, 255, 0.1)';
-        }
-    });
-
-    if (isValid) {
-        // Show success message
-        alert('Obrigado! Sua solicitação foi enviada com sucesso. Entraremos em contato em breve.');
-        form.reset();
-    }
-});
 
 // Add focus effect to form inputs
 document.querySelectorAll('.form-control').forEach(input => {
@@ -294,3 +270,40 @@ if (contactSection) {
 
     contactObserver.observe(contactSection);
 }
+
+// Define a data mínima como hoje formulário
+    document.getElementById('data-evento').min = new Date().toISOString().split('T')[0];
+
+    // envio formulário via whatsapp
+
+    document.getElementById('form-orcamento').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Captura os dados
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const tipoEvento = document.getElementById('tipo-evento').value;
+    const dataEvento = document.getElementById('data-evento').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    // Formata a data
+    const dataFormatada = new Date(dataEvento).toLocaleDateString('pt-BR');
+
+    // Monta a mensagem
+    const texto = `Olá! Gostaria de solicitar um orçamento:
+
+*Nome:* ${nome}
+*E-mail:* ${email}
+*Telefone:* ${telefone}
+*Tipo de Evento:* ${tipoEvento}
+*Data do Evento:* ${dataFormatada}
+*Mensagem:* ${mensagem}`;
+
+    // Número do WhatsApp (substitua pelo seu)
+    const numeroWhatsApp = '5521971396235';
+
+    // Abre o WhatsApp
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+});
