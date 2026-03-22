@@ -2311,8 +2311,8 @@ body.menu-open {
 /* Responsive adjustments */
 @media (max-width: 767px) {
     .whatsapp-float {
-        bottom: 20px;
-        right: 20px;
+        bottom: 30px;
+        right: 30px;
     }
 
     .whatsapp-button {
