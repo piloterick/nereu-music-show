@@ -307,3 +307,65 @@ if (contactSection) {
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
     window.open(url, '_blank');
 });
+
+// Phone Input Mask
+document.getElementById('telefone').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, '');
+    if (value.length > 11) value = value.slice(0, 11);
+
+    if (value.length > 0) {
+        value = '(' + value;
+    }
+    if (value.length > 3) {
+        value = value.slice(0, 3) + ') ' + value.slice(3);
+    }
+    if (value.length > 10) {
+        value = value.slice(0, 10) + '-' + value.slice(10);
+    }
+
+    e.target.value = value;
+});
+
+// Selecionar pacote e preencher no formulário
+document.addEventListener('DOMContentLoaded', function() {
+    const pricingButtons = document.querySelectorAll('.pricing-card .btn-primary-custom');
+    
+    pricingButtons.forEach((btn, index) => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Define o pacote baseado no índice
+            let pacote = '';
+            switch(index) {
+                case 0:
+                    pacote = 'essencial';
+                    break;
+                case 1:
+                    pacote = 'premium';
+                    break;
+                case 2:
+                    pacote = 'exclusivo';
+                    break;
+            }
+            
+            // Rola até o formulário
+            const formSection = document.getElementById('contato');
+            const headerOffset = 100;
+            const elementPosition = formSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+            
+            // Aguarda o scroll e seleciona o pacote no formulário
+            setTimeout(() => {
+                const selectEventType = document.getElementById('tipo-evento');
+                if (selectEventType) {
+                    selectEventType.value = pacote;
+                }
+            }, 800);
+        });
+    });
+});

@@ -946,12 +946,21 @@
                         <div class="form-group">
                             <label class="form-label" for="tipo-evento">Tipo de Evento</label>
                             <select id="tipo-evento" name="tipo_evento" class="form-control" required>
-                                <option value="" disabled selected>Selecione o tipo de evento</option>
-                                <option value="casamento">Casamento</option>
-                                <option value="corporativo">Evento Corporativo</option>
-                                <option value="aniversario">Aniversário</option>
-                                <option value="formatura">Formatura</option>
-                                <option value="outro">Outro</option>
+                                <option value="">Selecione o tipo de evento...</option>
+                                <optgroup label="Pacotes">
+                                    <option value="essencial">📦 Pacote Essencial</option>
+                                    <option value="premium">⭐ Pacote Premium</option>
+                                    <option value="exclusivo">💎 Pacote Exclusivo</option>
+                                </optgroup>
+                                <optgroup label="Tipos de Evento">
+                                    <option value="casamento">Casamento</option>
+                                    <option value="corporativo">Evento Corporativo</option>
+                                    <option value="aniversario">Aniversário</option>
+                                    <option value="bar">Bar / Restaurante</option>
+                                    <option value="formatura">Formatura</option>
+                                    <option value="festa">Festa Particular</option>
+                                    <option value="outro">Outro</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
@@ -967,7 +976,7 @@
                             placeholder="Conte-nos mais sobre o seu evento..." rows="5" maxlength="1000"></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn-primary-custom" aria-label="Enviar solicitação de orçamento">
+                        <button type="submit" class="btn-primary-custom btn-wpp" aria-label="Enviar solicitação de orçamento">
                             Enviar Solicitação Via WhatsApp
                         </button>
                     </div>
